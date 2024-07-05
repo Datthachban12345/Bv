@@ -1,0 +1,1128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <script language="javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <style>  
+        body {
+          margin: 0;
+          padding: 0;
+        }
+    
+        .swiper {
+          width: 50%;
+          height: 500px;
+        }
+    
+        .swiper-slide {
+          text-align: center;
+          font-size: 18px;
+          background: #fff;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+    
+        .swiper-slide img {
+          display: block;
+          width: 100%;
+          height: 86%;
+          object-fit: cover;
+          border-radius: 7px;
+        }
+    
+        .swiper.mySwiper.swiper-initialized.swiper-horizontal.swiper-backface-hidden {
+          margin-left: 5px;
+          margin-right: 0px;
+        }
+        
+      </style>
+</head>
+<body>
+<div class="app" style="width:100%">
+    <div class="header">
+        <nav class="header_navbar" style="width:100%;" >
+            
+            <div class="header_contain">
+                <div class="header_contain-header">
+                    <div class="containerr">
+                        <div class="header_child"> 
+                            <img src="img/f4828438fd515c8bac399409750c90fa.png" alt="" class="header-navbar-item-img" style="height:39px;width:175px;position: relative;">
+                            <div class="header-navbar-gioi-thieu-parent">
+                                <a href="" class="header-navbar-gioi-thieu header-navbar-item">Giới thiệu</a>
+                                <a href="" class="header-navbar-khach-hang header-navbar-item">Đối tượng khách hàng</a>
+                                <a href="" class="header-navbar-quy-trinh header-navbar-item">Quy trình</a>
+                                <a href="" class="header-navbar-bang-gia header-navbar-item">Bảng giá</a>
+                                <a href="" class="header-navbar-feel header-navbar-item">Cảm nhận khách hàng</a>
+                                <a href="" class="header-navbar-doi-ngu-bac-si header-navbar-item">Đội ngũ bác sĩ</a>
+                                <a href="" class="header-navbar-doi-ngu-bac-si header-navbar-item">Hình ảnh & video</a>
+                                <a class="header-navbar-phone hover_orange" href="tel:+84862515169">
+                                    <img src="img/Phone, Call.png" alt="" class="header-navbar-phone-font">
+                                    <li class="header-navbar-phone-text">Gọi 1900 1806</li>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="header_child header_child-1">
+                            <div class="header_child-above">
+                                <img src="img/f4828438fd515c8bac399409750c90fa.png" alt="" class="header-navbar-item header-navbar-item" style="height:39px;width:175px;position: relative;">
+                                <button class="header_menu"><i class="fa-solid fa-bars button_header"></i></button>
+                                <button class="header_close"><i class="fa-solid fa-xmark button_header"></i></button>
+                            </div>
+                            <div class="header-navbar-gioi-thieu-parent-1 header_child-below">
+                                <a href="" class="header-navbar-gioi-thieu header-navbar-item_1">Giới thiệu</a>
+                                <a href="" class="header-navbar-khach-hang header-navbar-item_1">Đối tượng khách hàng</a>
+                                <a href="" class="header-navbar-quy-trinh header-navbar-item_1">Quy trình</a>
+                                <a href="" class="header-navbar-bang-gia header-navbar-item_1">Bảng giá</a>
+                                <a href="" class="header-navbar-feel header-navbar-item_1">Cảm nhận khách hàng</a>
+                                <a href="" class="header-navbar-doi-ngu-bac-si header-navbar-item_1">Đội ngũ bác sĩ</a>
+                                <a class="header-navbar-phone-number header-navbar-item_1">
+                                    <li class="header-navbar-phone-text">Gọi 1900 1806</li>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+
+
+                <div class="header_parents">
+                    <div class="containerr">
+                        <div class="information_header-child_1 information_header-text open-sans">
+                            <div class="information_header-text-child">
+                                <h1 class="text-4xll" >Dịch vụ Khám bệnh tại nhà
+                                    <br>
+                                    An tâm chẳng lo ngại đường xa
+                                </h1>
+                                <h3 class="text-2xll">Bệnh viện Đa khoa Phương Đông triển khai dịch vụ khám bệnh tại nhà giúp các gia đình có con nhỏ, người cao tuổi, khó đi lại... được hưởng sự chăm sóc y tế cao cấp, an toàn, hiệu quả.</h3>
+                                <button class="button-information_header-text-child hover_orange">
+                                    <img src="img/Group (1).png" alt="" class="button-information_header-text-child-font">
+                                    <li class="button-information_header-text-child-text"> Đăng kí tư vấn</li> </button>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+            <img src="img/Group 10007.jpg" alt="" class="header_parent-img">
+        </nav>
+
+    </div>
+    <div class="introduce">
+        <div class="introduce_1">
+            <div class="introduce_img">
+                <img src="img/Group 10009.png" alt="" class="introduce_img-picture">
+                <img src="img/Rectangle 6627.png" alt="" class="introduce_img-picture_1">
+                <img src="img/Vector (5).png" alt="" class="introduce_img-picture_2 icon-absolute">
+                <img src="img/Vector (6).png" alt="" class="introduce_img-picture_3 icon-absolute">
+                <div class="introduce_button introduce_button_1">
+                    <button class="button-information_header-text-child hover_orange introduce_button-child">
+                        <img src="img/Group (1).png" alt="" class="button-information_header-text-child-font">
+                        <li class="button-information_header-text-child-text"> Đăng kí tư vấn</li> </button>
+                    <button class="introduce_button-child_2 introduce_button-child">
+                        <i class="fa-solid fa-phone "></i>GỌI CHO CHÚNG TÔI 
+                    </button>
+                </div>
+            </div>
+            <div class="introduce_parent-detail">
+                <div class="containerr introduce_information-parent">
+                    <div class="introduce_information introduce_child open-sans">   
+                        <ul class="introduce_information-content">Giới thiệu</ul>
+                        <li class="introduce_information-text_1 introduce_information-text">Tạo ra tâm lý thoải mái, hỗ trợ điều trị tích cực cho người bệnh</li>
+                        <li class="introduce_information-text_2 introduce_information-text">Dịch vụ khám bệnh tại nhà có thể áp dụng với mọi đối tượng người bệnh, đặc biệt tiện lợi đối với những người gặp khó khăn khi di chuyển, người già neo đơn, người khuyết tật, gia đình có trẻ nhỏ…
+                            <br><br>
+                            Trẻ nhỏ, cũng như người già, là đối tượng rất dễ mắc bệnh do hệ miễn dịch chưa hoàn thiện, sức đề kháng kém. Nhiều cha mẹ e ngại việc đưa trẻ đi khám chữa bệnh ở bệnh viện, trạm xá đông người vì sợ lây nhiễm chéo. Giờ đây, với dịch vụ khám tại nhà, cha mẹ và bé không cần chịu đựng tình trạng quá tải, đợi chờ để thăm khám hay mất nhiều thời gian và công sức di chuyển để chăm bé.
+                            <br><br>
+                            Người cao tuổi dễ mắc các bệnh về cơ xương khớp, huyết áp, tim mạch, tiểu đường.... Đây là những bệnh khó điều trị khỏi dứt điểm mà chỉ có thể kiểm soát, phải thường xuyên theo dõi và chăm sóc. Dịch vụ khám bệnh tại nhà sẽ giúp các gia đình chăm sóc người già ngay tại nơi ở là giải pháp y tế tiện lợi, tiết kiệm thời gian, xử trí các tình huống bất ngờ một cách kịp thời và nhanh chóng.
+                        </li>
+                        <div class="introduce_button introduce_button_2">
+                            <button class="button-information_header-text-child hover_orange introduce_button-child">
+                                <img src="img/Group (1).png" alt="" class="button-information_header-text-child-font">
+                                <li class="button-information_header-text-child-text"> Đăng kí tư vấn</li> </button>
+                            <button class="introduce_button-child_2 introduce_button-child">
+                                <i class="fa-solid fa-phone "></i>GỌI CHO CHÚNG TÔI
+                            </button>
+                        </div>
+                
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="advantage">
+        <div class="advantage_1">
+            <div class="advantage_information">
+                <div class="containerr">
+                    <div class="advantage_in_container">
+                        <div class="advantage_content open-sans">
+                            <ul class="advantage_content-ul open-sans">Ưu điểm</ul>
+                            <li class="advantage_content-li open-sans">Vì sao khách hàng nên lựa chọn dịch vụ </li>
+                            <li class="advantage_content-li open-sans">Khám bệnh tại nhà của Bệnh viện Phương Đông?</li>
+                        </div>  
+                        <div class="advantage_detail-parents open-sans">
+                            <div class="advantage_advantage-detail_right">
+                                <div class="advantage_detail-child">
+                                    <div class="advantage_detail-parent_img">
+                                        <img src="img/Frame (2).png" alt="" class="advantage_detail-child_img">
+                                    </div>
+                                    <ul class="advantage_detail-ul">Đội ngũ bác sĩ giàu y đức</ul>
+                                    <li class="advantage_detail-li">Đội ngũ bác sĩ khám sàng lọc và tư vấn có trình độ chuyên môn cao, giàu kinh nghiệm, tư vấn tận tình.</li>
+                                </div>
+                                <div class="advantage_detail_child">
+                                    <div class="advantage_detail-parent_img">
+                                        <img src="img/Frame (1).png" alt="" class="advantage_detail-child_img">
+                                    </div>
+                                    <ul class="advantage_detail-ul">Cảm giác thư thái, bình yên</ul>
+                                    <li class="advantage_detail-li">Không gian bệnh viện theo mô hình khách sạn hiện đại, khuôn viên rộng gần 10ha với hàng vạn cây xanh</li>
+                                </div>
+                            </div>
+                            <div class="advantage_advantage-detail_left">
+                                <div class="advantage_detail-child"">
+                                    <div class="advantage_detail-parent_img">
+                                        <img src="img/Frame.png" alt="" class="advantage_detail-child_img">
+                                    </div>
+                                    <ul class="advantage_detail-ul">Chất lượng dịch vụ hàng đầu</ul>
+                                    <li class="advantage_detail-li ">Trang bị đầy đủ phương tiện y tế cùng ekip cấp cứu luôn túc trực giúp theo dõi và xử trí kịp thời các trường hợp</li>
+                                </div>
+                                <div class="advantage_detail-child"">
+                                    <div class="advantage_detail-parent_img">
+                                        <img src="img/Group.png" alt="" class="advantage_detail-child_img">
+                                    </div>
+                                    <ul class="advantage_detail-ul">Chi phí hợp lý, tiết kiệm</ul>
+                                    <li class="advantage_detail-li">Xây dựng đa dạng gói khám với chi phí hợp lý, hỗ trợ trả góp qua thẻ tín dụng 0% lãi suất khi mua trọn gói. </li>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="advantage_img">
+                <img src="img/Group 10017.png" alt="" class="advantage_image_1">
+                <img src="img/Group 9458.png" alt="" class="advantage_image_2">
+                <img src="img/Union.png" alt="" class="advantage_image_3 icon-absolute">
+            </div>
+        </div>
+
+ 
+    </div>
+    <div class="picture">
+        <div class="picture_information">
+            <div class="containerr">
+                <div class="picture_information-in_container">
+                    <div class="picture_information-title">
+                        <ul class="picture_information-title_1">Hình ảnh</ul>
+                        <ul class="picture_information-title_2">Hình ảnh khách hàng sử dụng dịch vụ Khám bệnh tại nhà</ul>
+                    </div>
+                    <li class="picture_information-title_detail">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sapien, nec morbi mauris, turpis fringilla condimentum urna sagittis est. Id tortor odio posuere a cursus netus massa. Tellus etiam nisl pretium feugiat nulla. Pulvinar nisl et suspendisse velit ornare sed dolor, convallis dolor. Et, dignissim amet sed orci at amet id nulla mauris. Sagittis turpis eget mauris massa congue in rutrum vel. Augue est nunc a id quis mattis. Lorem ipsum dolor sit amet, consectetur.</li>
+                    <button class="button-information_header-text-child hover_orange introduce_button-child">
+                        <img src="img/Group (1).png" alt="" class="button-information_header-text-child-font">
+                        <li class="button-information_header-text-child-text"> Đăng kí tư vấn</li> </button>
+                    <div class="button_picture">
+                        <button class="control prev_button-picture prev_picture"><img src="img/Group 9365.png" alt="" class=""></button>
+                        <button class="control next_button-picture next_picture"><img src="img/Group 9311.png" alt="" class=""></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="swiper mySwiper mySwiper_1">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide"><img src="img/Group 9368.png" alt="" style="background-size: cover;" class=""></div>
+              <div class="swiper-slide"><img src="img/6134e0f4b1ed0e9b80bfbe2e594a194a.png" style=  "background-size: cover;" alt="" class=""></div>
+              <div class="swiper-slide"><img src="img/Group 10007.jpg" style="background-size: cover;" alt="" class=""></div>
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+        <div class="swiper mySwiper swiper_none">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide"><img src="img/Group 9368.png" alt="" style="background-size: cover;" class=""></div>
+              <div class="swiper-slide"><img src="img/6134e0f4b1ed0e9b80bfbe2e594a194a.png" style=  "background-size: cover;" alt="" class=""></div>
+              <div class="swiper-slide"><img src="img/Group 10007.jpg" style="background-size: cover;" alt="" class=""></div>
+            </div>
+            <div class="swiper-button-next swiper-button-next-picture"></div>
+            <div class="swiper-button-prev swiper-button-prev-picture"></div>
+            <div class="swiper-pagination-none"></div>
+        </div>
+    </div>
+    <div class="question" >
+        <img src="img/Mask group.png" alt="" class="question_img">
+        <div class="question_information">
+            <div class="containerr">
+                <div class="containerr_right open-sans">
+                    <div class="question_content">
+                        <ul class="question_content-1">Câu hỏi</ul>
+                        <li class="question_content-2">Những câu hỏi thường gặp</li>
+                    </div>
+                    <div class="question_detail">
+                        <div class="question_detail-generality add_minus">
+                            <li class="question_detail-child_minus">
+                                <span class="question_detail-child_text">hello</span>
+                                
+                                <div class="answer_detail-child_text">
+                                    <li class=""></li>
+                                </div>
+                            </li>
+                        </div>
+                        
+                        <div class="all_question">
+                            <div class="question_detail-child question_detail-child_0">
+                                <span class="question_detail-child_span">Bệnh viện Đa khoa Phương Đông có dịch vụ thai sản trọn gói không</span>
+                                <button class="question_detail-child_button"><i class="fa-solid fa-circle-plus question-plus"></i></button>
+                                <button class="question_detail-child_button close_button"><i class="fa-solid fa-circle-minus question-minus"></i></button>
+                            </div>
+                
+                            <div class="question_detail-child question_detail-child_1">
+                                <span class="question_detail-child_span">Bệnh viện Đa khoa Phương Đông có phục vụ ăn uống ngay trong khuôn viên không</span>
+                                <button class="question_detail-child_button"><i class="fa-solid fa-circle-plus question-plus"></i></button>
+                                <button class="question_detail-child_button close_button"><i class="fa-solid fa-circle-minus question-minus"></i></button>
+                            </div>
+                            <div class="question_detail-child question_detail-child_2">
+                                <span class="question_detail-child_span">Bệnh viện Đa khoa Phương Đông có áp dụng Bảo hiểm Y Tế, Bảo hiểm Bảo lãnh không?</span>
+                                <button class="question_detail-child_button"><i class="fa-solid fa-circle-plus question-plus"></i></button>
+                                <button class="question_detail-child_button close_button"><i class="fa-solid fa-circle-minus question-minus"></i></button>
+                            </div>
+                            <div class="question_detail-child question_detail-child_3">
+                                <span class="question_detail-child_span">Bệnh viện Đa khoa Phương Đông có dịch vụ tiêm chủng trẻ em không?</span>
+                                <button class="question_detail-child_button"><i class="fa-solid fa-circle-plus question-plus"></i></button>
+                                <button class="question_detail-child_button close_button"><i class="fa-solid fa-circle-minus question-minus"></i></button>
+                            </div>
+                            <div class="question_detail-child question_detail-child_4">
+                                <span class="question_detail-child_span">Thời gian hoạt động của Bệnh viện Đa khoa Phương Đông như thế nào?</span>
+                                <button class="question_detail-child_button"><i class="fa-solid fa-circle-plus question-plus"></i></button>
+                                <button class="question_detail-child_button close_button"><i class="fa-solid fa-circle-minus question-minus"></i></button>
+                            </div>
+                            <div class="question_detail-child question_detail-child_5">
+                                <span class="question_detail-child_span">Bệnh viện Đa khoa Phương Đông được đầu tư về cơ sở vật chất như thế nào?</span>
+                                <button class="question_detail-child_button"><i class="fa-solid fa-circle-plus question-plus"></i></button>
+                                <button class="question_detail-child_button close_button"><i class="fa-solid fa-circle-minus question-minus"></i></button>
+                            </div>
+                            <div class="question_detail-child question_detail-child_6">
+                                <span class="question_detail-child_span">Có thể tham khảo lịch khám chi tiết của Bệnh viện Đa khoa Phương Đông ở đâu</span>
+                                <button class="question_detail-child_button"><i class="fa-solid fa-circle-plus question-plus"></i></button>
+                                <button class="question_detail-child_button close_button"><i class="fa-solid fa-circle-minus question-minus"></i></button>
+                            </div>
+                            <div class="question_detail-child question_detail-child_7">
+                                <span class="question_detail-child_span">Bệnh viện Đa khoa Phương Đông đang triển khai các gói khám sức khỏe nào?</span>
+                                <button class="question_detail-child_button"><i class="fa-solid fa-circle-plus question-plus"></i></button>
+                                <button class="question_detail-child_button close_button"><i class="fa-solid fa-circle-minus question-minus"></i></button>
+                            </div>
+                            <div class="question_detail-child question_detail-child_8">
+                                <span class="question_detail-child_span">Thời gian hoạt động của Bệnh viện Đa khoa Phương Đông như thế nào?</span>
+                                <button class="question_detail-child_button"><i class="fa-solid fa-circle-plus question-plus"></i></button>
+                                <button class="question_detail-child_button close_button"><i class="fa-solid fa-circle-minus question-minus"></i></button>
+                            </div>
+                        </div>
+            
+                        <div class="answer_detail-child close_button">
+                            <li>như này đã được chưa anh</li>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+    <div class="procedure">
+        <div class="procedure_content">
+            <img src="img/Group (5).png" alt="" class="procedure_img-icon_1 icon-absolute">
+            <span class="procedure_content-child_1 open-sans">Quy trình</span>
+            <span class="procedure_content-child_2 open-sans">Quy trình sử dụng dịch vụ Khám bệnh tại nhà</span>
+            <img src="img/Union (2).png" alt="" class="procedure_img-icon_2 icon-absolute">
+        </div>
+        <img src="img/Group 10025.png" alt="" class="procedure_img">
+        <div class="procedure_contain open-sans"> 
+                <div class="procedure_parent procedure_parent-1">
+                    <div class="procedure_parent-detail procedure_parent-detail_top ">
+                        <div class="procedure_child-1_2 procedure_child-1 procedure_infor-b1">
+                            <img src="img/Vector (1).png" alt="" class="procedure_child-vector">
+                            <div class="procedure_information-child_1 text_right">
+                                <ul class="procedure_information-child_1-content">Liên hệ tổng đài bệnh viện</ul>
+                                <li class="procedure_information-child_1-detail">Khách hàng đăng ký dịch vụ khám bệnh tại nhà theo các cách sau: - Liên hệ tổng đài tư vấn 19001806 - Nhắn tin tại fanpage Bệnh Viện Đa Khoa Phương Đông.</li>
+                            </div>
+                        </div>
+                        <img src="img/Group 10027.png" alt="" class="procedure_child procedure_child-1 procedure_child-b1">
+                        <img src="img/Group 10027.png" alt="" class="procedure_child procedure_child-1 procedure_child-b1 close_buttonn">
+                    </div>
+                    <button class="button-information_header-text-child hover_orange btn_procedure btn_chung">
+                        <img src="img/Group (1).png" alt="" class="button-information_header-text-child-font">
+                        <li class="button-information_header-text-child-text"> Đăng kí tư vấn</li> </button>
+                    
+                    <div class="procedure_parent-detail procedure_parent-detail_2 colen">
+                        <img src="img/Group 10035@2x.png" alt="" class="procedure_child procedure_child-1 procedure_child-b5">
+                        <img src="img/Group 10035@2x.png" alt="" class="procedure_child procedure_child-1 procedure_child-b5 close_buttonn">
+                        <div class="procedure_child-1_2 procedure_child-1 procedure_infor-b5">
+                            <img src="img/Vector.png" alt="" class="procedure_child-vector">
+                            <div class="procedure_information-child_1 text_left">
+                                <ul class="procedure_information-child_1-content">Kết thúc dịch vụ</ul>
+                                <li class="procedure_information-child_1-detail">Sau khi khám bệnh, khách hàng sẽ được nhận kết quả khám thông qua hình thức online hoặc trả tận nơi, bao gồm: - Kết quả chẩn đoán - Khuyến cáo của bác sĩ - Đơn thuốc - Hẹn tái khám (nếu có)</li>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="procedure_parent-2 procedure_parent">
+                    <div class="procedure_parent-detail">
+                        <div class="procedure_child-1_2 procedure_child-1 x_y-2 procedure_child-1 procedure_infor-b2">
+                            <img src="img/Vector (2).png" alt="" class="procedure_child-vector">
+                            <div class="procedure_information-child_1 text_right procedure_parent-2_height">
+                                <ul class="procedure_information-child_1-content">Đặt lịch khám tại nhà</ul>
+                                <li class="procedure_information-child_1-detail">Nhân viên tư vấn của bệnh viện sẽ liên hệ để xác nhận lịch hẹn với khách, khai thác thông tin, giúp khách hàng lựa chọn khung giờ sử dụng dịch vụ, chuyên khoa cần khám theo danh mục bác sĩ và dịch vụ chuyên môn. </li>
+                            </div>
+                        </div>
+                        <img src="img/Group 10029.png" alt="" class="procedure_child-2 procedure_child-b2">
+                        <img src="img/Group 10029.png" alt="" class="procedure_child-2 procedure_child-b2 close_buttonn">
+                    </div>
+                    <div class="procedure_parent-detail procedure_parent-detail_2">
+                        <img src="img/Group 10033.png" alt="" class="procedure_child-2 procedure_child-b4">
+                        <img src="img/Group 10033.png" alt="" class="procedure_child-2 procedure_child-b4 close_buttonn">
+                        <div class="procedure_child-1_2 procedure_child-1 x_y-2 procedure_infor-b4" >
+                            <img src="img/Vector (3).png" alt="" class="procedure_child-vector">
+                            <div class="procedure_information-child_1 text_left procedure_parent-2_height">
+                                <ul class="procedure_information-child_1-content">Bác sĩ đến khám tại nhà</ul>
+                                <li class="procedure_information-child_1-detail">Sau khi khách hàng xác nhận thông tin, theo giờ hẹn bác sĩ và điều dưỡng sẽ đến thăm khám tại nhà theo dịch vụ yêu cầu: nội khoa, nhi khoa, chẩn đoán hình ảnh... Kết thúc buổi khám, khách hàng, người bệnh sẽ được hướng dẫn cài đặt video để bác sĩ tiếp tục theo dõi, tư vấn, giải đáp thắc mắc.</li>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            <div class="procedure_parent-3">
+                <img src="img/Group 10031.png" alt="" class="procedure_child procedure_child-b3">
+                <img src="img/Group 10031.png" alt="" class="procedure_child procedure_child-b3 close_buttonn">
+                <div class="procedure_parent-3_information procedure_infor-b3">
+                    <img src="img/Vector (4).png" alt="" class="">
+                    <div class="text_center">
+                        <ul class="procedure_information-child_1-content">Thanh toán</ul>
+                        <li class="procedure_information-child_1-detail">Khách hàng có thể lựa chọn thanh toán qua các hình thức sau:
+                            <br>
+                            - Thanh toán chi phí online: chuyển khoản, ví điện tử...
+                            <br>
+                            - Thanh toán tiền mặt tại nhà khi bác sĩ đến thăm khám
+                            <br>
+                            - Thanh toán bằng thẻ</li>
+                    </div>
+                </div>
+            </div>
+
+           
+
+        </div>
+        <div class="procedure_information-bottom">
+            <div class="procedure_information-bottom_center max_width-450px open-sans">
+                <div class="procedure_information-bottom_b1">
+                    <ul class="procedure_information-child_1-content">Liên hệ tổng đài bệnh viện</ul>
+                    <li class="procedure_information-child_1-detail">Khách hàng đăng ký dịch vụ khám bệnh tại nhà theo các cách sau: - Liên hệ tổng đài tư vấn 19001806 - Nhắn tin tại fanpage Bệnh Viện Đa Khoa Phương Đông.</li>
+                </div>
+                <div class="procedure_information-bottom_b2">
+                    <ul class="procedure_information-child_1-content">Đặt lịch khám tại nhà</ul>
+                    <li class="procedure_information-child_1-detail">Nhân viên tư vấn của bệnh viện sẽ liên hệ để xác nhận lịch hẹn với khách, khai thác thông tin, giúp khách hàng lựa chọn khung giờ sử dụng dịch vụ, chuyên khoa cần khám theo danh mục bác sĩ và dịch vụ chuyên môn. </li>
+                </div>
+                <div class="procedure_information-bottom_b3">
+                        <ul class="procedure_information-child_1-content">Thanh toán</ul>
+                        <li class="procedure_information-child_1-detail">Khách hàng có thể lựa chọn thanh toán qua các hình thức sau:
+                            <br>
+                            - Thanh toán chi phí online: chuyển khoản, ví điện tử...
+                            <br>
+                            - Thanh toán tiền mặt tại nhà khi bác sĩ đến thăm khám
+                            <br>
+                            - Thanh toán bằng thẻ</li>
+                </div>
+                <div class="procedure_information-bottom_b4" >
+                    <ul class="procedure_information-child_1-content">Bác sĩ đến khám tại nhà</ul>
+                    <li class="procedure_information-child_1-detail">Sau khi khách hàng xác nhận thông tin, theo giờ hẹn bác sĩ và điều dưỡng sẽ đến thăm khám tại nhà theo dịch vụ yêu cầu: nội khoa, nhi khoa, chẩn đoán hình ảnh... Kết thúc buổi khám, khách hàng, người bệnh sẽ được hướng dẫn cài đặt video để bác sĩ tiếp tục theo dõi, tư vấn, giải đáp thắc mắc.</li>
+                </div>
+                <div class="procedure_information-bottom_b5">
+                    <ul class="procedure_information-child_1-content">Kết thúc dịch vụ</ul>
+                    <li class="procedure_information-child_1-detail">Sau khi khám bệnh, khách hàng sẽ được nhận kết quả khám thông qua hình thức online hoặc trả tận nơi, bao gồm: - Kết quả chẩn đoán - Khuyến cáo của bác sĩ - Đơn thuốc - Hẹn tái khám (nếu có)</li>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="price_list">
+        <img src="img/Mask group (1).png" alt="" class="price_list-img">
+        <img src="img/Vector (6).png" alt="" class="price_list-img_1 icon-absolute">
+        <img src="img/Group (4).png" alt="" class="price_list-img_2 icon-absolute">
+        <img src="img/Group (3).png" alt="" class="price_list-img_3 icon-absolute">
+        <div class="price_list-container">
+            <div class="containerr">
+                <div class="price_list-container_in-container">
+                    <div class="price_list-content_parent open-sans" >
+                        <div class="price_list-content_child">
+                            <ul class="price_list-content_child-ul"><img src="img/Rectangle 6443.png" alt="" class="nghich">BẢNG GIÁ</ul>
+                            <li class="price_list-content_child-li">Bảng giá dịch vụ tại Phương Đông</li>
+                        </div>
+                        <li class="price_list-information_child">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sapien, nec morbi mauris, turpis fringilla condimentum urna sagittis est. Id tortor odio posuere a cursus netus massa. Tellus etiam nisl pretium feugiat nulla. Pulvinar nisl et suspendisse velit ornare sed dolor, convallis dolor. Et, dignissim amet sed orci at amet id nulla mauris. Sagittis turpis eget mauris massa congue in rutrum vel. Augue est nunc a id quis mattis. Lorem ipsum dolor sit amet, consectetur.
+                            <br>
+                            <br>
+                            Lưu ý: Tùy từng thời điểm, bảng giá có thể có thay đổi. Để được báo giá chính xác nhất, quý khách liên hệ tổng đài 19001806, chuyên viên sẽ nhanh chóng tư vấn, hỗ trợ quý khách đặt lịch và giải đáp thắc mắc
+            
+                        </li>
+                        <span class="price_list-input_text"><br><br>Quý khách vui lòng để lại số điện thoại, chúng tôi sẽ liên hệ lại ngay!</span>
+                        <div class="price_list-input">  
+                            <input type="text" class="header_search-input" placeholder="Nhập số điện thoại...">
+                            <button class="price_list-input_button btn_chung">
+                                <img src="img/Frame (3).png" alt="" class="price_list-input_button-frame" style="height:19px;">
+                                <span class="price_list-input_button-text" style="font-size: 9px;">GỬI THÔNG TIN</span>
+                            </button>
+                        </div>
+                        <div class="price_list-button_0">
+                            <button class="control prev_price-list"><img src="img/Group 9365.png" alt="" class=""></button>
+                            <button class="control next_price-list"><img src="img/Group 9311.png" alt="" class=""></button>
+                        </div>
+                    </div>
+                    <div class="swiper mySwiper mySwiper_2">
+                        <div class="swiper-wrapper">
+                          <div class="swiper-slide"><img src="img/image 901.jpg" alt="" class="mySwiper_2-img"></div>
+                          <div class="swiper-slide"><img src="img/6134e0f4b1ed0e9b80bfbe2e594a194a.png" alt="" class=""></div>
+                          <div class="swiper-slide"><img src="img/Group 10009.png" alt="" class=""></div>
+                        </div>
+                        <div class="swiper-pagination swiper-pagination_price-list"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+  
+    </div>
+    <div class="endow">
+        <div class="endow_img">
+            <img src="img/Union (1).png" alt="" class="endow_img-child_1 icon-absolute">
+            <img src="img/Union (2).png" alt="" class="endow_img-child_2 icon-absolute">
+            <img src="img/Group (2).png" alt="" class="endow_img-child_3 icon-absolute">
+        </div>
+        <div class="containerr">
+            <div class="endow_header">
+                <ul class="endow_header-content"><img src="img/Rectangle 6443.png" alt="" class="nghich">Ưu đãi</ul>
+                <div class="endow_header-infor">
+                    <li class="endow_header_infor-child">Chương trình ưu đãi đặc biệt dành cho gói Khám bệnh tại nhà</li>
+                    <div class="endow_header_infor-button control_endow-0">
+                        <button class="control prev_endow "><img src="img/Group 9365.png" alt="" class=""></button>
+                        <button class="control next_endow"><img src="img/Group 9311.png" alt="" class=""></button>
+                    </div>
+                </div>
+                
+            </div>
+            <div class="endow_detail">
+                <button class="control prev_endow control_endow-1"><img src="img/Group 9365.png" alt="" class=""></button>
+                <div class="endow_main open_endow-main endow_main-0">
+                    <div class="endow_main-parent open_endow-main endow_target_0">
+                        <img src="img/Rectangle 6602.png" alt="" class="endow_main-child_img">
+                        <div class="endow_main-parent_text">
+                            <span class="endow_main-child_text-first open_endow-main endow_target_0">Ưu đãi dịch vụ Khám bệnh tại nhà cho người trên 60 tuổi</span>
+                            <!-- <span class="endow_main-child_text-infor_show endow_main-child_text-infor_show-0 close_button">Xem thêm</span>
+                            <span class="endow_main-child_text-infor_hide span_show-0 close_button">Ẩn bớt</span> -->
+                            <div class="endow_main-child_text-parent endow_main-child_text-parent_0">
+                                <span class="endow_main-child_text-second open_endow-main endow_target_0">Giảm ngay <b class="endow_main-child_text-b endow_target_0 open_endow-main">30%</b></span>
+                                <span class="endow_main-child_text-infor open_endow-main endow_target_0"><img src="img/check-circle.png" alt="" class="endow_main-child_img-0 endow_target_0 open_endow-main">Chương trình ưu đãi dành cho Gia đình 4 người</span>
+                                <span class="endow_main-child_text-infor endow_target_0 open_endow-main"><img src="img/check-circle.png" alt="" class="endow_main-child_img-0 endow_target_0 open_endow-main">Chương trình ưu đãi dành cho Gia đình 4 người</span>
+                                <span class="endow_main-child_text-infor endow_target_0 open_endow-main"><img src="img/check-circle.png" alt="" class="endow_main-child_img-0 endow_target_0 open_endow-main">Chương trình ưu đãi dành cho Gia đình 4 người</span>
+                                <span class="endow_main-child_text-infor endow_target_0 open_endow-main"><img src="img/check-circle.png" alt="" class="endow_main-child_img-0 endow_target_0 open_endow-main">Chương trình ưu đãi dành cho Gia đình 4 người</span>
+                            </div>
+                        </div>
+                        <button class="endow_main-child_button open_endow-main endow_target_0">
+                            <span class="endow_main-child_button-text open_endow-main endow_target_0">ĐĂNG KÍ NGAY</span>
+                        </button>
+                    </div>
+                </div>
+      
+                <div class="endow_main endow_main-1">
+                    <div class="endow_main-parent endow_target_1">
+                        <img src="img/Rectangle 6602.png" alt="" class="endow_main-child_img">
+                        <div class="endow_main-parent_text">
+                            <span class="endow_main-child_text-first endow_target_1">Ưu đãi dịch vụ Khám bệnh tại nhà cho người trên 60 tuổi</span>
+                            <span class="endow_main-child_text-infor_show endow_main-child_text-infor_show-1 close_button">Xem thêm</span>
+                            <span class="endow_main-child_text-infor_hide span_show-1 close_button">Ẩn bớt</span>
+                            <div class="endow_main-child_text-parent endow_main-child_text-parent_1">
+                                <span class="endow_main-child_text-second endow_target_1">Giảm ngay <b class="endow_main-child_text-b endow_target_1">40%</b></span>
+                                <span class="endow_main-child_text-infor endow_target_1"><img src="img/check-circle.png" alt="" class="endow_main-child_img-0 endow_target_1">Chương trình ưu đãi dành cho Gia đình 4 người</span>
+                                <span class="endow_main-child_text-infor endow_target_1"><img src="img/check-circle.png" alt="" class="endow_main-child_img-0 endow_target_1">Chương trình ưu đãi dành cho Gia đình 4 người</span>
+                                <span class="endow_main-child_text-infor endow_target_1"><img src="img/check-circle.png" alt="" class="endow_main-child_img-0 endow_target_1">Chương trình ưu đãi dành cho Gia đình 4 người</span>
+                                <span class="endow_main-child_text-infor endow_target_1"><img src="img/check-circle.png" alt="" class="endow_main-child_img-0 endow_target_1">Chương trình ưu đãi dành cho Gia đình 4 người</span>
+                            </div>
+    
+                        </div>
+                        <button class="endow_main-child_button endow_target_1">
+                            <span class="endow_main-child_button-text endow_target_1">ĐĂNG KÍ NGAY</span>
+                        </button>
+                    </div>
+                </div>
+                <div class="endow_main endow_main-2">  
+                    <div class="endow_main-parent endow_target_2">
+                        <img src="img/Rectangle 6602.png" alt="" class="endow_main-child_img">
+                        <div class="endow_main-parent_text">
+                            <span class="endow_main-child_text-first endow_target_2">Ưu đãi dịch vụ Khám bệnh tại nhà cho người trên 60 tuổi</span>
+                            <span class="endow_main-child_text-infor_show endow_main-child_text-infor_show-2 close_button">Xem thêm</span>
+                            <span class="endow_main-child_text-infor_hide span_show-2 close_button">Ẩn bớt</span>
+                            <div class="endow_main-child_text-parent endow_main-child_text-parent_2">
+                                <span class="endow_main-child_text-second endow_target_2">Giảm ngay <b class="endow_main-child_text-b endow_target">50%</b></span>
+                                <span class="endow_main-child_text-infor endow_target_2"><img src="img/check-circle.png" alt="" class="endow_main-child_img-0 endow_target_2">Chương trình ưu đãi dành cho Gia đình 4 người</span>
+                                <span class="endow_main-child_text-infor endow_target_2"><img src="img/check-circle.png" alt="" class="endow_main-child_img-0 endow_target_2">Chương trình ưu đãi dành cho Gia đình 4 người</span>
+                                <span class="endow_main-child_text-infor endow_target_2"><img src="img/check-circle.png" alt="" class="endow_main-child_img-0 endow_target_2">Chương trình ưu đãi dành cho Gia đình 4 người</span>
+                                <span class="endow_main-child_text-infor endow_target_2"><img src="img/check-circle.png" alt="" class="endow_main-child_img-0 endow_target_2">Chương trình ưu đãi dành cho Gia đình 4 người</span>
+                            </div>
+    
+                        </div>
+                        <button class="endow_main-child_button endow_target_2">
+                            <span class="endow_main-child_button-text endow_target_2">ĐĂNG KÍ NGAY</span>
+                        </button>
+                    </div>
+                </div>
+                <button class="control next_endow control_endow-1"><img src="img/Group 9311.png" alt="" class=""></button>
+            </div>
+        </div>
+
+    </div>
+    <div class="register" style="background-image: url('img/Group 10023.jpg'); width:100%">
+        <div class="containerr">
+            <div class="register_in-containerr">
+                <div class="register_text">
+                    <span class="register_text-child">Chúng tôi luôn tin tưởng rằng
+                        Dịch vụ của Phương Đông sẽ làm Quý khách hài lòng!</span>
+                </div>  
+                <div class="register_table ">
+                    <div class="register_table-content">
+                        <span class="register_table-content_1">ĐĂNG KÝ TƯ VẤN MIỄN PHÍ</span>
+                        <span class="register_table-content_2">Đặt hẹn ngay để nhận tư vấn và chúng tôi sẽ xếp lịch khám kịp thời!</span>
+                    </div>
+                    <div class="register_table-input">
+                        <div class="register_table-input_parent">
+                            <input type="text" class="register_table-input_child register_table-input_child-name" placeholder="Họ và tên (*)">
+                            <input type="text" class="register_table-input_child register_table-input_child-phone" placeholder="Số điện thoại (*)">
+                            <input type="text" class="register_table-input_child register_table-input_child-mail" placeholder="E-mail">
+                            <input type="text" class="register_table-input_child register_table-input_child_content" placeholder="Nội dung...">
+                        </div>
+                        <div class="register_table-button">
+                            <button class="register_table-input_child btn_chung hover_orange">
+                                <img src="img/Group (1).png" alt="" class="button-information_header-text-child-font">
+                                <li class="button-information_header-text-child-text"> Đăng kí tư vấn</li> </button>
+                            </button>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+  
+        </div>
+
+    </div>
+    <div class="footer" style="background-image: url('img/Group 10024.jpg'); width:100%">
+        <div class="containerr">
+            <div class="footer_in-container open-sans">
+                <img src="img/f4828438fd515c8bac399409750c90fa.png" alt="" class="footer_img">
+                <div class="grid grid-cols-8 footer_content">
+                    <div class="col-start-1 col-end-4 footer_parent">
+                        <h3 class="footer_child-content">BỆNH VIỆN ĐA KHOA PHƯƠNG ĐÔNG</h3>
+                        <ul class="">
+                            <li class="">Địa chỉ: Số 9, Phố Viên, P. Cổ Nhuế 2, Q. Bắc Từ Liêm, HN</li>
+                            <li class="">Email: bvphuongdong@phuongdonghospital.vn</li>
+                            <li class="">Hotline: 1900 1806</li>
+                        </ul>
+        
+                    </div>
+                    <div class="col-start-4 col-end-6 footer_parent">
+                        <h3 class="footer_child-content">Thời gian mở cửa</h3>
+                        <div class="footer_child-detail">
+                            <ul class="footer_child-detail_1">
+                                <li class="">Thứ 2 - Chủ nhật :</li>
+                                <li class="">Cấp cứu 24/7 :</li>
+                            </ul>
+                            <ul class="footer_child-detail_2">
+                                <li class="">07:30 -19:00</li>
+                                <li class="">0833 015 115</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-start-6 col-end-8 footer_parent">
+                        <h3 class="footer_child-content">Liên hệ</h3>
+                        <div class="footer_child-detail">
+                            <ul class="footer_child-detail_1">
+                                <li class="">Hotline tiêm chủng :</li>
+                                <li class="">Hotline khoa sản :</li>
+                            </ul>
+                            <ul class="footer_child-detail_2">
+                                <a class="hover_orange" href="tel:+84862515169">
+                                    <li class="footer_child-detail_2-li">0911 615 115</li>
+                                </a>
+                                <a class=" hover_orange" href="tel:+84862515169">
+                                    <li class="footer_child-detail_2-li">0911 615 115</li>
+                                </a>
+                            </ul>
+                        </div>
+    
+                    </div>
+                    <div class="col-start-8 col-end-9 footer_parent footer_parent-socical">
+                        <h3 class="footer_child-content">Mạng xã hội</h3>
+                        <div class="">
+                            <a href="" class="footer-item_link"><i class="footer-item_link-icon fa-brands fa-facebook"></i></a>
+                            <a href="" class="footer-item_link"><i class="footer-item_link-icon fa-brands fa-instagram"></i></a>
+                            <a href="" class="footer-item_link"><i class="fa-brands fa-youtube footer-item_link-icon"></i></a>
+                            <a href="" class="footer-item_link"><i class="footer-item_link-icon fa-brands fa-linkedin"></i></a>
+                        </div>
+    
+        
+                    </div>
+                </div>
+                <div class="footer_end">
+                    <span class="footer_end-span">© Copyright 2022 Bệnh Viện Đa khoa Phương Đông. All Rights Reserved. Designed and developed by Tech5S</span>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<script>
+// TRANSITION
+
+// BẢNG GIÁ
+var name_picture_1 = ".underlined_picture-child_price-list_"
+    var a = ""
+    var imgFeature_1 = document.querySelector('.price_list-feature')
+    var listImg_1 = document.querySelectorAll('.list-image_price-list img')
+    var prevBtn_1 = document.querySelectorAll('.prev_price-list')
+    var nextBtn_1 = document.querySelectorAll('.next_price-list')
+    var currentIndex = 0;
+    function updateImageByIndex_1(index_1){
+        document.querySelectorAll('.list-image_price-list div').forEach(item => {
+            item.classList.remove('active')
+        })
+        currentIndex = index_1
+        imgFeature_1.src = listImg_1[index_1].getAttribute('src')
+        listImg_1[index_1].parentElement.classList.add('active')
+    }
+    function ShowPrev(){
+        if(currentIndex == 0){
+            a = currentIndex.toString()
+            a = name_picture_1 + a
+            var dele = document.querySelector(a)
+            dele.classList.remove('open_price-list')
+            currentIndex = listImg_1.length -1
+            a = currentIndex.toString()
+            a = name_picture_1 + a
+            var plus = document.querySelector(a)
+            plus.classList.add('open_price-list')
+            
+        }else{
+            a = currentIndex.toString()
+            a = name_picture_1 + a
+            var dele = document.querySelector(a)
+            dele.classList.remove('open_price-list')
+            currentIndex--
+            a = currentIndex.toString()
+            a = name_picture_1 + a
+            
+            var dele = document.querySelector(a)
+            dele.classList.add('open_price-list')
+        }
+        updateImageByIndex_1(currentIndex)
+    }
+    function ShowNext(){
+        if(currentIndex == listImg_1.length -1){
+            a = currentIndex.toString()
+            a = name_picture_1 + a
+            var dele = document.querySelector(a)
+            dele.classList.remove('open_price-list')
+            currentIndex = 0
+            a = currentIndex.toString()
+            a = name_picture_1 + a
+            var dele = document.querySelector(a)
+            dele.classList.add('open_price-list')
+        }else{
+            a = currentIndex.toString()
+            a = name_picture_1 + a
+            var dele = document.querySelector(a)
+            dele.classList.remove('open_price-list')
+            currentIndex++
+            a = currentIndex.toString()
+            a = name_picture_1 + a
+            var dele = document.querySelector(a)
+            dele.classList.add('open_price-list')
+        }
+        updateImageByIndex_1(currentIndex)
+    }
+    for(const child of prevBtn_1){
+            child.addEventListener('click',ShowPrev)
+    }
+    for(const child of nextBtn_1){
+            child.addEventListener('click',ShowNext)
+    }
+
+// ƯU ĐÃI
+    var name_picture_2 = ".endow_target_"
+    var a1 = ""
+    var a11 = ""
+    var listImg_2 = document.querySelectorAll('.endow_main')
+    var prevBtn_2 = document.querySelectorAll('.prev_endow')
+    var nextBtn_2 = document.querySelectorAll('.next_endow')
+    var currentIndex = 0;
+    function updateImageByIndex_2(index_2){
+        document.querySelectorAll('.endow_main').forEach(item => {
+            item.classList.remove('active')
+        })
+        currentIndex = index_2
+        listImg_2[index_2].parentElement.classList.add('active')
+    }
+    function EndowPrev(){
+        if(currentIndex == 0){
+            a1 = currentIndex.toString()
+            a11 = name_picture_2 + a1
+
+            var dele = document.querySelectorAll(a11)
+            dele.forEach(xoa => {
+                xoa.classList.remove('open_endow-main');
+            });
+            currentIndex = listImg_2.length -1
+            a1 = currentIndex.toString() 
+            a11 = name_picture_2 + a1
+            var plus = document.querySelectorAll(a11)
+            plus.forEach(pluss => {
+                pluss.classList.add('open_endow-main');
+            });
+            
+        }else{
+            a1 = currentIndex.toString()
+            a11 = name_picture_2 + a1
+            var dele = document.querySelectorAll(a11)
+            dele.forEach(xoa => {
+                xoa.classList.remove('open_endow-main');
+            });
+            currentIndex--
+            a1 = currentIndex.toString()
+            a11 = name_picture_2 + a1
+            
+            var plus = document.querySelectorAll(a11)
+            plus.forEach(pluss => {
+                pluss.classList.add('open_endow-main');
+            });
+        }
+
+            const width = window.innerWidth;
+            nameWidth = ".endow_main-"
+            if (width <= 763){
+                listImg_2.forEach(pluss => {
+                        pluss.classList.add('close_button');
+                });
+
+                if(a1){
+                    nameWidth = nameWidth + a1
+                    var plus = document.querySelectorAll(nameWidth)
+                    plus.forEach(pluss => {
+                        pluss.classList.remove('close_button');
+                    });
+                }
+            
+            }else{
+                listImg_2.forEach(pluss => {
+                        pluss.classList.remove('close_button');
+                    });
+            }
+
+        
+        updateImageByIndex_2(currentIndex)
+    }
+    function EndowNext(){
+        if(currentIndex == listImg_2.length -1){
+            a1 = currentIndex.toString()
+            a11 = name_picture_2 + a1
+            var dele = document.querySelectorAll(a11)
+            dele.forEach(xoa => {
+                xoa.classList.remove('open_endow-main');
+            });
+            currentIndex = 0
+            a1 = currentIndex.toString()
+            a11 = name_picture_2 + a1
+            var plus = document.querySelectorAll(a11)
+            plus.forEach(pluss => {
+                pluss.classList.add('open_endow-main');
+            });
+        }else{
+            a1 = currentIndex.toString()
+            a11 = name_picture_2 + a1
+            var dele = document.querySelectorAll(a11)
+            dele.forEach(xoa => {
+                xoa.classList.remove('open_endow-main');
+            });
+            currentIndex++
+            a1 = currentIndex.toString()
+            a11 = name_picture_2 + a1
+            var plus = document.querySelectorAll(a11)
+            plus.forEach(pluss => {
+                pluss.classList.add('open_endow-main');
+            });
+        }
+       
+        const width = window.innerWidth;
+            nameWidth = ".endow_main-"
+            if (width <= 763){
+                listImg_2.forEach(pluss => {
+                        pluss.classList.add('close_button');
+                });
+
+            if(a1){
+                nameWidth = nameWidth + a1
+                var plus = document.querySelectorAll(nameWidth)
+                plus.forEach(pluss => {
+                    pluss.classList.remove('close_button');
+                });
+            }
+            }else{
+                listImg_2.forEach(pluss => {
+                        pluss.classList.remove('close_button');
+                    });
+            }
+        updateImageByIndex_2(currentIndex)
+    }
+    for(const child of prevBtn_2){
+            child.addEventListener('click',EndowPrev)
+    }
+    for(const child of nextBtn_2){
+            child.addEventListener('click',EndowNext)
+    }
+
+
+// QUESTION
+    name_question = ".question_detail-child_"
+    a=""
+    const buttonPlus = document.querySelectorAll(".question-plus")
+    const buttonMinus = document.querySelectorAll(".close_button")
+    const close = document.querySelectorAll(".question_detail-child")
+    const answer = document.querySelector(".answer_detail-child")
+    
+    buttonPlus.forEach(function(imgItem,X){
+        imgItem.addEventListener("click",function(){
+            buttonPlus.forEach(xoa => {
+                xoa.classList.add('close_button');  
+            });
+            buttonMinus.forEach(xoa => {
+                xoa.classList.remove('close_button');  
+            });
+            a = X.toString()
+            a= name_question + a
+            var open = document.querySelector(a)
+            close.forEach(xoa => {
+                xoa.classList.add('close_button');
+            });
+            open.classList.remove('close_button');
+            answer.classList.remove('close_button');
+        })  
+    })
+    buttonMinus.forEach(function(imgItem,X){
+        imgItem.addEventListener("click",function(){
+            buttonMinus.forEach(xoa => {
+                xoa.classList.add('close_button');  
+            });
+            buttonPlus.forEach(xoa => {
+                xoa.classList.remove('close_button');  
+            });
+            close.forEach(xoa => {
+                xoa.classList.remove('close_button');
+            });
+            answer.classList.add('close_button');
+        })
+    })
+
+//  PHẦN CHỈNH SỬA BUTTON CLICK MENU
+    const openMenu = document.querySelector(".header_menu")
+    const detailMenu = document.querySelector(".header_child-below")
+    const closeMenu = document.querySelector(".header_close")
+    function ShowDetail(){
+        detailMenu.classList.add('open_menu-detail')
+        openMenu.style.display = "none"
+        closeMenu.style.display = "block"
+    }
+    function CloseDetail(){
+        detailMenu.classList.remove('open_menu-detail')
+        openMenu.style.display = "block"
+        closeMenu.style.display = "none"
+    }
+    openMenu.addEventListener('click',ShowDetail)
+    closeMenu.addEventListener('click',CloseDetail)
+
+// PHẦN CHỈNH SỬA REPONSIVE ưu đãi
+    $(window).resize(function(){
+        var width = $(window).width();
+        if (width <= 763){
+            listImg_2.forEach(pluss => {
+                    pluss.classList.add('close_button');
+            });
+
+        if(!a1){
+            var openEndow = document.querySelectorAll(".open_endow-main")
+            openEndow.forEach(pluss => {
+                pluss.classList.remove('close_button');
+            });
+        }
+    }
+    else{
+        listImg_2.forEach(pluss => {
+                pluss.classList.remove('close_button');
+            });
+    }
+    });
+
+
+// reposive picture
+    var procedureB1 = document.querySelector(".procedure_child-b1.close_buttonn")
+    var procedureB2 = document.querySelector(".procedure_child-b2.close_buttonn")
+    var procedureB3 = document.querySelector(".procedure_child-b3.close_buttonn")
+    var procedureB4 = document.querySelector(".procedure_child-b4.close_buttonn")
+    var procedureB5 = document.querySelector(".procedure_child-b5.close_buttonn")
+    var contentB1 = document.querySelector(".procedure_information-bottom_b1")
+    var contentB2 = document.querySelector(".procedure_information-bottom_b2")
+    var contentB3 = document.querySelector(".procedure_information-bottom_b3")
+    var contentB4 = document.querySelector(".procedure_information-bottom_b4")
+    var contentB5 = document.querySelector(".procedure_information-bottom_b5")
+    procedureB1.addEventListener('click', () => {
+        if (!contentB1.style.display || contentB1.style.display == 'none') {
+            contentB1.style.display = 'flex';
+            contentB2.style.display = 'none';
+            contentB3.style.display = 'none';
+            contentB4.style.display = 'none';
+            contentB5.style.display = 'none';
+        }
+    });
+    procedureB2.addEventListener('click', () => {
+        if (!contentB2.style.display || contentB2.style.display == 'none') {
+            contentB2.style.display = 'flex';
+            contentB1.style.display = 'none';
+            contentB3.style.display = 'none';
+            contentB4.style.display = 'none';
+            contentB5.style.display = 'none';
+        }
+    });
+    procedureB3.addEventListener('click', () => {
+        if (!contentB3.style.display || contentB3.style.display == 'none') {
+            contentB3.style.display = 'flex';
+            contentB1.style.display = 'none';
+            contentB2.style.display = 'none';
+            contentB4.style.display = 'none';
+            contentB5.style.display = 'none';
+        }
+    });
+    procedureB4.addEventListener('click', () => {
+        if (!contentB4.style.display || contentB4.style.display == 'none') {
+            contentB4.style.display = 'flex';
+            contentB1.style.display = 'none';
+            contentB3.style.display = 'none';
+            contentB2.style.display = 'none';
+            contentB5.style.display = 'none';
+        }
+    });
+    procedureB5.addEventListener('click', () => {
+        if (!contentB5.style.display || contentB5.style.display == 'none') {
+            contentB5.style.display = 'flex';
+            contentB1.style.display = 'none';
+            contentB3.style.display = 'none';
+            contentB4.style.display = 'none';
+            contentB2.style.display = 'none';
+        }
+    });
+    $(window).resize(function(){
+        var width = $(window).width();
+        if (width >= 874){
+            contentB5.style.display = 'none';
+            contentB1.style.display = 'none';
+            contentB3.style.display = 'none';
+            contentB4.style.display = 'none';
+            contentB2.style.display = 'none';
+    }
+
+    });
+// CHỈNH SỬA PHẦN ENDOW-MAIN HEIGHT MÃ 350PX
+    // showEndowTitle = document.querySelectorAll(".endow_main-child_text-infor_show")
+    // a1= ""
+    // nameTitle = "endow_main-child_text-parent_"
+    // hideEndowTitle = document.querySelectorAll(".endow_main-child_text-infor_hide")
+
+    // $(window).resize(function(){
+    //     var width = $(window).width();
+    //     if (width <= 350){
+    //         function ShowTitleEndow(){
+    //     if(a1){
+    //         a1 = 0
+    //         nameTitle = nameTitle + a.toString()
+
+    //     }
+
+    // }
+    // function HideTitleEndow(){
+    //     if(a1){
+    //         a1 = 0
+    //         nameTitle = nameTitle + a.toString()
+    //     }
+    // }
+    // for(const child of showEndowTitle){
+    //         child.addEventListener('click',ShowTitleEndow)
+    // }
+    // for(const child of hideEndowTitle){
+    //         child.addEventListener('click',HideTitleEndow)
+    // }
+    //     }
+    // });
+
+
+</script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+<!-- Initialize Swiper -->
+    <script>
+    var swiper = new Swiper(".mySwiper.mySwiper_1", {
+        slidesPerView: 1,
+        spaceBetween: 30,
+        loop: true,
+        pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+        },
+        navigation: {
+        nextEl: ".next_picture",
+        prevEl: ".prev_picture",
+        },
+    });
+    var swiper = new Swiper(".mySwiper.mySwiper_2", {
+        slidesPerView: 1,
+        spaceBetween: 30,
+        loop: true,
+        pagination: {
+        el: ".swiper-pagination_price-list",
+        clickable: true,
+        },
+        navigation: {
+        nextEl: ".next_price-list",
+        prevEl: ".prev_price-list",
+        },
+    });
+    var swiper = new Swiper(".swiper_none", {
+        slidesPerView: 1,
+        spaceBetween: 30,
+        loop: true,
+        pagination: {
+        el: ".swiper-pagination-none",
+        clickable: true,
+        },
+        navigation: {
+        nextEl: ".swiper-button-next-picture",
+        prevEl: ".swiper-button-prev-picture",
+        },
+    // });
+    // var swiper = new Swiper(".mySwiper_3", {
+    //   slidesPerView: 3,
+    //   spaceBetween: 30,
+    //   loop: true,
+    //   navigation: {
+    //     nextEl: ".prev_endow",
+    //     prevEl: ".next_endow",
+    //   },
+    });
+    </script>
+</body>
+</html>
